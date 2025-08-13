@@ -13,7 +13,7 @@
 ---
 
 <p align="center">
-  <a href="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/" target="_blank"><img src="https://res.cloudinary.com/dcy10jvpr/image/upload/c_thumb,w_200,g_face/v1755106480/Screenshot_2025-08-13_230110_gdizpu.png" alt="Wikipedia Search Web App – Live Preview" /></a>
+  <a href="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/" target="_blank"><img src="https://res.cloudinary.com/dcy10jvpr/image/upload/c_thumb,w_600,g_face/v1755106480/Screenshot_2025-08-13_230110_gdizpu.png" alt="Wikipedia Search Web App – Live Preview" /></a>
 </p>
 
 <p align="center">
@@ -154,7 +154,7 @@ fetch(url)
 
 <p align="center">
   <a href="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/" target="_blank">
-    <img src="https://res.cloudinary.com/dcy10jvpr/image/upload/c_thumb,w_200,g_face/v1755106480/Screenshot_2025-08-13_230110_gdizpu.png" alt="Wikipedia Search Preview" />
+    <img src="https://res.cloudinary.com/dcy10jvpr/image/upload/c_thumb,w_600,g_face/v1755106480/Screenshot_2025-08-13_230110_gdizpu.png" alt="Wikipedia Search Preview" />
   </a>
 </p>
 
