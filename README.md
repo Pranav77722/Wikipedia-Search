@@ -164,7 +164,7 @@ fetch(url)
 
 **Pranav Khaire**
 📩 Email: <a href="mailto:khairepranav246@gmail.com">[khairepranav246@gmail.com](mailto:khairepranav246@gmail.com)</a>
-🔗 LinkedIn: <a href="https://www.linkedin.com/in/pranav-khaire" target="_blank">Pranav Khaire</a>
+🔗 LinkedIn: <a href="https://www.linkedin.com/in/pranav-khaire-465664248/" target="_blank">Pranav Khaire</a>
 
 ---
 
