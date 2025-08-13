@@ -1,0 +1,173 @@
+/* --- Step 1: Import a clean, modern font --- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* --- Step 2: Define a modern color palette and reusable variables --- */
+:root {
+    --primary-color: #4285f4;
+    /* A nice Google-blue */
+    --text-color: #202124;
+    --subtle-text-color: #5f6368;
+    --link-color: #1a0dab;
+    --url-color: #006621;
+    --background-color: #f8f9fa;
+    --surface-color: #ffffff;
+    --border-color: #dfe1e5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --base-border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+/* --- Step 3: Apply base styles and a cleaner layout --- */
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+}
+
+.main-container {
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Step 4: Redesign the Header --- */
+.wiki-search-header {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wiki-logo {
+    width: 180px;
+    margin-bottom: 25px;
+}
+
+/* --- Step 5: Animate and style the search input --- */
+.search-input-container {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 18px;
+    padding: 14px 20px;
+    border-radius: 50px;
+    /* Pill shape for a modern look */
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 6px var(--shadow-color);
+    outline: none;
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.search-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(66, 133, 244, 0.2);
+}
+
+/* --- Step 6: Add a loading spinner for better UX --- */
+/* Add <div class="spinner d-none" id="spinner"></div> to your HTML */
+.spinner {
+    height: 40px;
+    width: 40px;
+    margin-top: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+/* --- Step 7: Redesign search results with hover animations --- */
+.search-results {
+    width: 100%;
+    max-width: 650px;
+    margin-top: 30px;
+    padding-left: 0;
+    /* Remove default padding */
+}
+
+.result-item {
+    margin-bottom: 16px;
+    padding: 20px;
+    background-color: var(--surface-color);
+    border-radius: var(--base-border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 4px var(--shadow-color);
+    opacity: 0;
+    /* Start hidden for animation */
+    transform: translateY(20px);
+    /* Start slightly lower */
+    animation: fadeIn 0.5s ease-out forwards;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+/* Stagger the animation for each result item */
+.result-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.result-item:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+/* ...and so on */
+
+
+.result-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--link-color);
+    margin: 0 0 4px;
+    /* No underline by default */
+}
+
+.result-title:hover {
+    text-decoration: underline;
+}
+
+.result-url {
+    color: var(--url-color);
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    /* Better spacing */
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.link-description {
+    font-size: 15px;
+    color: var(--subtle-text-color);
+    line-height: 1.6;
+}
